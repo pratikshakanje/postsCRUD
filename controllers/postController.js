@@ -1,4 +1,5 @@
-const post = require("../data/post.js")
+const posts = require("../data/post.js") ; 
+
 
 //get all data
 const sendPost = (req, res) => {
@@ -11,7 +12,7 @@ const sendPost = (req, res) => {
   } catch (err) {
     res.status(500).json({
       success: false,
-      message: "something went wrong",
+      message: "internal server error...!",
       error: err.message
     })
   }
